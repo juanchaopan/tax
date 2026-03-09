@@ -8,7 +8,7 @@ from llama_index.llms.nvidia import NVIDIA
 from llama_index.embeddings.nvidia import NVIDIAEmbedding
 from mcp.server.fastmcp import FastMCP
 
-mcp = FastMCP("Canadian Tax Advisor")
+mcp = FastMCP("Canadian Tax Advisor", host="0.0.0.0", port=8000)
 
 
 def get_retriever():
