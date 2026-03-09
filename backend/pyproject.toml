@@ -1,0 +1,36 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "juanchaopan",email = "p8499@126.com"}
+]
+requires-python = ">=3.11,<4.0"
+dependencies = [
+    "faster-whisper (>=1.2.1,<2.0.0)",
+    "jsonlines (>=4.0.0,<5.0.0)",
+    "llama-index (>=0.14.15,<0.15.0)",
+    "llama-index-embeddings-nvidia (>=0.4.2,<0.5.0)",
+    "chromadb (>=1.5.4,<2.0.0)",
+    "llama-index-vector-stores-chroma (>=0.5.5,<0.6.0)",
+    "protobuf (>=3.20.0,<4.0.0)",
+    "llama-index-llms-nvidia (>=0.4.4,<0.5.0)",
+    "mcp (>=1.26.0,<2.0.0)",
+    "numpy (>=2.4.3,<3.0.0)",
+]
+
+
+[tool.poetry]
+packages = []
+
+[tool.uv]
+env-file = ".env"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "black (>=26.3.0,<27.0.0)"
+]
