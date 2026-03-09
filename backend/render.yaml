@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: canadian-tax-advisor
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    envVars:
+      - key: NVIDIA_API_KEY
+        sync: false
+      - key: NVIDIA_EMBEDDING_MODEL
+        sync: false
+      - key: NVIDIA_LLM_MODEL
+        sync: false
